@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Store</title>
+    <title>Online Toy Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Welcome to Play with Bella</h1>
-        <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+        <h1>Online Toy Store</h1>
+        <button id="cartButton">🛒 View Cart (0)</button>
+        <a href="admin.html">Admin Panel</a>
     </header>
 
-    <section id="product-list">
-        <!-- Product items will be injected here via JavaScript -->
-    </section>
+    <main>
+        <h2>Our Products</h2>
+        <div id="productList" class="product-list">
+            <!-- Products will be dynamically displayed here -->
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <button id="closeCart">Close</button>
+            <button id="checkoutButton">Checkout</button>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Simple Store</p>
+        <p>&copy; 2024 Online Toy Store</p>
     </footer>
 
     <script src="script.js"></script>
