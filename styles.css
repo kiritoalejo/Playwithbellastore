@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General Body */
+body {
+    background-color: #fdf2e9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ff6b6b;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section for controls */
+.product-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.import-btn, .add-btn {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.import-btn:hover {
+    background-color: #f783ac;
+}
+
+.add-btn:hover {
+    background-color: #ff85a1;
+}
+
+/* Product List Section */
+.product-list {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-list h2 {
+    color: #ff6b6b;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Product Table */
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#productTable th, #productTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#productTable th {
+    background-color: #ffb6c1;
+    color: white;
+    font-weight: bold;
+}
+
+#productTable td {
+    color: #333;
+}
+
+#productTable tr:hover {
+    background-color: #ffecf0;
+}
+
+/* Action buttons */
+.edit-btn, .delete-btn {
+    background-color: #ffb6c1;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #ff85a1;
+}
+
+.delete-btn:hover {
+    background-color: #ff6b6b;
+}
+/* General styling omitted for brevity; only added styles shown */
+
+#productListAdmin {
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}

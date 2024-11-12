@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🧸 Play with Bella Admin Panel</h1>
+    </header>
+
+    <section>
+        <h2>Add New Product</h2>
+        <form id="addProductForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="text" id="productSku" placeholder="Product SKU" required>
+            <input type="text" id="productCode" placeholder="Product Code" required>
+            <input type="number" id="productPrice" placeholder="Product Price" required>
+            <input type="file" id="productImage" accept="image/*" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Import Products from Excel</h2>
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
+    </section>
+
+    <section>
+        <h2>Existing Products</h2>
+        <ul id="productListAdmin">
+            <!-- Product items will be injected here via JavaScript -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simple Store Admin</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
